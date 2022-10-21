@@ -1,0 +1,107 @@
+Un Bean est un objet qui est instancié, assemblé et géré par Spring IoC Container . IoC (Inversion of control), est un
+processus qui définit les dépendances d'un objet sans avoir à les créer. C'est lors de la création des objets, que Spring
+va injecter les Beans entre eux afin d'avoir toutes leurs dépendances.
+
+plus sérieusement, un bean est une classe Java qui respecte diverses règles de syntaxe et qui possède des accesseurs pour tous ses attributs.
+qques regles a respecter:
+getNom() (get + nom de l'attribut avec la première lettre en majuscule)
+isFemale() (is + nom de l'attribut booleen avec la première lettre en mal)
+setPrenom() (set + nom de l'att avec premiere lettre en maj)
+C'est beau mais pas très utile tant que tu n'utilise pas d outil externe qui se base sur le fait que tes classes sont des beans.
+pour voir a quoi ca sert concrètement, regarde comment agissent ces outils:
+- Digester : (sur le site jakarta-apache) parseur XML qui load les données d'un XML dans tes classes.
+- JSP: langage utilisé pour incorporer du code Java dans du HTML (définition simplifié). Peut se servir des Bean pour rendre sa syntaxe plus simple.
+
+Bean session Stateful.
+Bean session Stateless.
+Bean session Singleton.
+
+
+Un EJB est un objet distant dont tu peux appeler les méthodes. Typiquement tu peux avoir une page web en jsp / servlet et de ton serveur tu peux 
+appeler un objet distant (EJB) situé sur un autre serveur. Ca sert à la communication entre serveurs.
+
+Un projet EJB est utilisé pour organiser les ressources contenues dans un module EJB. Un module EJB permet de réunir des beans enterprise dans une unité 
+déployable unique. ... Un module EJB peut être utilisé en tant qu'application autonome ou être combiné à d'autres modules pour créer une application d'entreprise Java EE.
+
+Un projet EJB est utilisé pour organiser les ressources contenues dans un module EJB. Un module EJB permet de réunir des beans enterprise dans une unité 
+déployable unique. Il est déployé dans un fichier d'archive Java (JAR) standard.
+
+Un EAR (pour Enterprise Application ARchive) est un format de fichier utilisé par Java EE pour empaqueter (en) un ou plusieurs modules dans une seule archive, de façon à 
+pouvoir déployer ces modules sur un serveur d'applications en une seule opération, et de façon cohérente.
+ Les fichiers EAR sont utilisés pour exécuter l'application sur un serveur compatible Java EE, tel que GlassFish Server ou Geronimo.
+
+
+
+Un framework (ou infrastructure logicielle en français ) désigne en programmation informatique un ensemble d'outils et de composants logiciels à la base 
+d'un logiciel ou d'une application. C'est le framework, encore appelé structure logicielle, canevas ou socle d'applications en français, qui établit 
+les fondations d'un logiciel ou son squelette applicatif. Tous les développeurs qui l'utilisent peuvent l'enrichir pour en améliorer l'utilisation.
+
+L'objectif du framework est de simplifier et d'uniformiser le travail des développeurs. Il fonctionne comme un cadre ou un patron, mais son maniement
+suppose d'avoir déjà un profil expérimenté. En général, une infrastructure logicielle est associée spécifiquement à un language de script ou de 
+programmation. Par exemple, Hibernate est un framework pour JavaScript et Django pour Python. 
+
+2.1 1) angulaire
+2.8 8) Django
+2.9 9) Laravel
+
+1. Flutter
+2. Ionic
+3. React Native
+
+En informatique, une bibliothèque ou librairie[1] logicielle (ou encore, bibliothèque de programmes) est un ensemble de fonctions utilitaires, 
+regroupées et mises à disposition afin de pouvoir être utilisées sans avoir à les réécrire. Les fonctions sont regroupées de par leur appartenance 
+à un même domaine conceptuel (mathématique, graphique, tris, etc). Les bibliothèques logicielles se distinguent des exécutables dans la mesure où 
+elles ne représentent pas une application. Elles ne sont pas complètes, elles ne possèdent pas l'essentiel d'un programme comme une fonction 
+principale et par conséquent ne peuvent pas être exécutées directement. Les bibliothèques peuvent regrouper des fonctions simples (par exemple 
+le calcul d'un cosinus, ou l'inversion d'une matrice) comme des fonctions complexes avec de nombreuses fonctions internes non accessibles 
+directement. L'intérêt des bibliothèques réside dans le fait qu'elles contiennent du code utile que l'on ne désire pas avoir à réécrire à chaque 
+fois.
+
+Une librairie est un ensemble de fonctions et de classes déjà codées dans un langage spécifique.
+
+Ainsi, le développeur (ou programmeur) peut aller y piocher en fonction (!) de ses besoins. Inutile de coder toutes les fonctions. Il leur suffit 
+d’aller récupérer celles qui effectuent ce qu’il souhaite.
+
+La librairie ressemble parfois, à première vue, au framework par son utilisation. Mais la différence, parce qu’il y en a une de taille, réside 
+dans l’interrelation avec le code.
+La librairie s’intègre dans votre travail sans le contraindre. Votre code utilise ou appelle une librairie.
+Un framework est un ensemble complexe d’outils (incluant généralement aussi des librairies) pour votre développement. Il utilise votre code pour 
+obtenir le résultat souhaité. C’est lui qui l’appelle.
+
+le jstl
+
+permettant d'afficher des donnée sous forme graphique
+
+-----------------------------------------------------------------
+c'est quoi le concept d'invresion de contrôle dans la depense
+rechercher inversion de contrôle 
+------------------------------------------------------------------
+
+c'est dans les application web qu'on utilise les archives .war, on les deploit sur les serveur d'application comme le tomcat
+c'est dans les applications desktop qu'on utilise les archives .jar parceque il n'a pas besoin de serveur d'application pour être executer, il est fait directement
+sur le jre
+le bean session etat est la pour les echanges entre le client et le serveur et le bean entité est la pour la persistance des données
+---------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+le jquery(les librairies) est il destiné a un seul langage
+
+
+
+
+inversion de contrôle
+ 
