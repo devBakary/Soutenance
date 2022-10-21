@@ -1,19 +1,17 @@
-package Modele;
+package com.soutenance.soutenance.Modele;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-public class Salarie {
+public class Client {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -22,5 +20,4 @@ public class Salarie {
     private String prenom;
     private String numero;
     private String adresse;
-    private String salaire;
 }
