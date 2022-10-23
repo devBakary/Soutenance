@@ -14,11 +14,12 @@ import java.util.Date;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-public class Index {
+public class Depense  {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private Date date;
-    private Long index;
+    private String libelle;
+    private String montant;
 }

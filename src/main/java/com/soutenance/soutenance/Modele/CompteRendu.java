@@ -5,22 +5,19 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.Date;
 
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-public class Salarie {
+public class CompteRendu {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    private String nom;
-    private String prenom;
-    private String numero;
-    private String adresse;
-    private String contact;
-    private String salaire;
+    private Date date;
 
-
+    @ManyToOne
+    private Salarie salarie;
 }
