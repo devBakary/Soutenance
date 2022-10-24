@@ -45,7 +45,8 @@ public class salarieServiceImpl implements salarieService{
     }
 
     @Override
-    public Salarie supprimerSalarie(Long id) {
-        return null;
+    public void supprimerSalarie(Long id) {
+
+         salarieRepository.deleteById(id);
     }
 }

@@ -19,7 +19,7 @@ public class Index {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    private Date date;
+    private Date date = new Date();
     private Long index;
 
 

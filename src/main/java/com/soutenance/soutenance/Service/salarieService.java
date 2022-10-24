@@ -1,9 +1,11 @@
 package com.soutenance.soutenance.Service;
 
 import com.soutenance.soutenance.Modele.Salarie;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public interface salarieService {
 
     //methode permettant de creer
@@ -19,5 +21,5 @@ public interface salarieService {
     Salarie modifierSalarie(Salarie salarie, Long id);
 
     //Methode permettant de supprimer
-    Salarie supprimerSalarie(Long id);
+    void supprimerSalarie(Long id);
 }

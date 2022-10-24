@@ -14,6 +14,8 @@ import javax.persistence.Id;
 @AllArgsConstructor
 @Data
 public class Motif {
+
+    //motif c'est a dire si c'est de l'essence ou du gazoil
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
