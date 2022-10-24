@@ -19,5 +19,7 @@ public class CompteRendu {
     private Date date;
 
     @ManyToOne
+    @JoinColumn(name = "idsalarie")
     private Salarie salarie;
+
 }
