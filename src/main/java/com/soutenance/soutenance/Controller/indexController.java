@@ -1,7 +1,7 @@
 package com.soutenance.soutenance.Controller;
 
-import com.soutenance.soutenance.Modele.Index;
-import com.soutenance.soutenance.Service.indexService;
+import com.soutenance.soutenance.Modele.NumeroIndex;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -10,25 +10,27 @@ import java.util.List;
 @RequestMapping("/index")
 public class indexController {
 
+    @Autowired
     private com.soutenance.soutenance.Service.indexService indexService;
 
     @PostMapping("/creer")
-    public Index creerindex(@RequestBody Index index){
+    public NumeroIndex creerindex(@RequestBody NumeroIndex index){
+
         return indexService.creerindex(index);
     }
 
     @GetMapping("/afficherId")
-    public List<Index> afficherIndexId(@PathVariable Long id){
+    public List<NumeroIndex> afficherIndexId(@PathVariable Long id){
        return indexService.afficherIndexId(id);
     }
 
     @GetMapping("/afficher")
-    public List<Index> afficherIndex(){
+    public List<NumeroIndex> afficherIndex(){
         return indexService.afficherIndex();
     }
 
     @PutMapping("/modifier/{id}")
-    public Index modifierindex(@RequestBody Index index, @PathVariable Long id){
+    public NumeroIndex modifierindex(@RequestBody NumeroIndex index, @PathVariable Long id){
         return indexService.modifierindex(index, id);
     }
 

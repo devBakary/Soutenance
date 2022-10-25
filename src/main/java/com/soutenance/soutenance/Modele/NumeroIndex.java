@@ -11,15 +11,19 @@ import java.util.Date;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-public class CompteRendu {
+public class NumeroIndex {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private Date date = new Date();
+    private String numero;
 
     @ManyToOne
-    @JoinColumn(name = "idsalarie")
-    private Salarie salarie;
+    @JoinColumn(name = "idcompterendu")
+    private CompteRendu compteRendu;
 
+    @ManyToOne
+    @JoinColumn(name = "idmotif")
+    private Motif motif;
 }

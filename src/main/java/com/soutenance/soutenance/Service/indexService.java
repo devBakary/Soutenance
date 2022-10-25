@@ -1,17 +1,17 @@
 package com.soutenance.soutenance.Service;
 
 
-import com.soutenance.soutenance.Modele.Index;
+import com.soutenance.soutenance.Modele.NumeroIndex;
 
 import java.util.List;
 
 public interface indexService {
 
-    Index creerindex(Index index);
+    NumeroIndex creerindex(NumeroIndex index);
 
-    Index modifierindex(Index index, Long id);
+    NumeroIndex modifierindex(NumeroIndex index, Long id);
 
-    List<Index> afficherIndex();
+    List<NumeroIndex> afficherIndex();
 
-    List<Index> afficherIndexId(Long id);
+    List<NumeroIndex> afficherIndexId(Long id);
 }

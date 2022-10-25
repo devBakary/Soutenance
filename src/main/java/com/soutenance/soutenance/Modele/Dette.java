@@ -13,13 +13,18 @@ import java.util.Date;
 @Data
 public class Dette {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private Date date = new Date();
     private String motif;
+    private String litre;
     private String montant;
 
     @ManyToOne
     @JoinColumn(name = "idcompterendu")
     private CompteRendu compteRendu;
+
+    @ManyToOne
+    @JoinColumn(name = "idclient")
+    private Client client;
 }

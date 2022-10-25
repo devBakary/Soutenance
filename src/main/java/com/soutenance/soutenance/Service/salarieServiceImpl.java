@@ -38,7 +38,7 @@ public class salarieServiceImpl implements salarieService{
         Salarie salarieUpdate = salarieRepository.findById(id).get();
         salarieUpdate.setNom(salarie.getNom());
         salarieUpdate.setPrenom(salarie.getPrenom());
-        salarieUpdate.setNumero(salarie.getNumero());
+        salarieUpdate.setContact(salarie.getContact());
         salarieUpdate.setAdresse(salarie.getAdresse());
         salarieUpdate.setSalaire(salarie.getSalaire());
         return salarieRepository.saveAndFlush(salarie);

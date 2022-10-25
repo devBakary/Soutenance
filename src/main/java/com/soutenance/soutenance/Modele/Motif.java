@@ -17,7 +17,7 @@ public class Motif {
 
     //motif c'est a dire si c'est de l'essence ou du gazoil
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String libelle;
 }

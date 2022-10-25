@@ -28,6 +28,7 @@ public class DetteServiceImpl implements DetteService{
         Dette detteUpdate = detteRepository.findById(id).get();
         detteUpdate.setMontant(dette.getMontant());
         detteUpdate.setMotif(dette.getMotif());
+        detteUpdate.setLitre(dette.getLitre());
         return detteRepository.saveAndFlush(dette);
     }
 

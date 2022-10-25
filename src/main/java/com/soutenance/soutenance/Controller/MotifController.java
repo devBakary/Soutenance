@@ -19,6 +19,7 @@ public class MotifController {
 
     @PostMapping("/creer")
     public Motif creer(@RequestBody Motif motif){
+
         return motifService.creer(motif);
     }
 }

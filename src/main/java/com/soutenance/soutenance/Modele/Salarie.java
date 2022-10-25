@@ -13,11 +13,10 @@ import javax.persistence.*;
 public class Salarie {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String nom;
     private String prenom;
-    private String numero;
     private String adresse;
     private String contact;
     private String salaire;
